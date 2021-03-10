@@ -1,0 +1,12 @@
+C:\Users\Viet Dep Trai\Desktop\Project10_03_2021\Project10-03-2021\ProjectWeb\pjBusiness\bin\Debug\netcoreapp3.1\pjBusiness.deps.json
+C:\Users\Viet Dep Trai\Desktop\Project10_03_2021\Project10-03-2021\ProjectWeb\pjBusiness\bin\Debug\netcoreapp3.1\pjBusiness.runtimeconfig.json
+C:\Users\Viet Dep Trai\Desktop\Project10_03_2021\Project10-03-2021\ProjectWeb\pjBusiness\bin\Debug\netcoreapp3.1\pjBusiness.runtimeconfig.dev.json
+C:\Users\Viet Dep Trai\Desktop\Project10_03_2021\Project10-03-2021\ProjectWeb\pjBusiness\bin\Debug\netcoreapp3.1\pjBusiness.dll
+C:\Users\Viet Dep Trai\Desktop\Project10_03_2021\Project10-03-2021\ProjectWeb\pjBusiness\bin\Debug\netcoreapp3.1\pjBusiness.pdb
+C:\Users\Viet Dep Trai\Desktop\Project10_03_2021\Project10-03-2021\ProjectWeb\pjBusiness\obj\Debug\netcoreapp3.1\pjBusiness.csprojAssemblyReference.cache
+C:\Users\Viet Dep Trai\Desktop\Project10_03_2021\Project10-03-2021\ProjectWeb\pjBusiness\obj\Debug\netcoreapp3.1\pjBusiness.AssemblyInfoInputs.cache
+C:\Users\Viet Dep Trai\Desktop\Project10_03_2021\Project10-03-2021\ProjectWeb\pjBusiness\obj\Debug\netcoreapp3.1\pjBusiness.AssemblyInfo.cs
+C:\Users\Viet Dep Trai\Desktop\Project10_03_2021\Project10-03-2021\ProjectWeb\pjBusiness\obj\Debug\netcoreapp3.1\pjBusiness.csproj.CoreCompileInputs.cache
+C:\Users\Viet Dep Trai\Desktop\Project10_03_2021\Project10-03-2021\ProjectWeb\pjBusiness\obj\Debug\netcoreapp3.1\pjBusiness.dll
+C:\Users\Viet Dep Trai\Desktop\Project10_03_2021\Project10-03-2021\ProjectWeb\pjBusiness\obj\Debug\netcoreapp3.1\pjBusiness.pdb
+C:\Users\Viet Dep Trai\Desktop\Project10_03_2021\Project10-03-2021\ProjectWeb\pjBusiness\obj\Debug\netcoreapp3.1\pjBusiness.genruntimeconfig.cache
