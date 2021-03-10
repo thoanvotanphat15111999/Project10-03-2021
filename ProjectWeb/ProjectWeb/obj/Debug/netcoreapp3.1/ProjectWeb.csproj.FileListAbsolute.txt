@@ -18,3 +18,23 @@ C:\Users\Viet Dep Trai\Desktop\Project10_03_2021\ProjectWeb\ProjectWeb\obj\Debug
 C:\Users\Viet Dep Trai\Desktop\Project10_03_2021\ProjectWeb\ProjectWeb\obj\Debug\netcoreapp3.1\ProjectWeb.dll
 C:\Users\Viet Dep Trai\Desktop\Project10_03_2021\ProjectWeb\ProjectWeb\obj\Debug\netcoreapp3.1\ProjectWeb.pdb
 C:\Users\Viet Dep Trai\Desktop\Project10_03_2021\ProjectWeb\ProjectWeb\obj\Debug\netcoreapp3.1\ProjectWeb.genruntimeconfig.cache
+E:\QTHT_DHCNTPHCM\QTHT_DHCNTPHCM\HK2-2020-2021\THUCTAPDOANHNGHIEP\LEARNC#\Project10-03-2021\ProjectWeb\ProjectWeb\bin\Debug\netcoreapp3.1\appsettings.Development.json
+E:\QTHT_DHCNTPHCM\QTHT_DHCNTPHCM\HK2-2020-2021\THUCTAPDOANHNGHIEP\LEARNC#\Project10-03-2021\ProjectWeb\ProjectWeb\bin\Debug\netcoreapp3.1\appsettings.json
+E:\QTHT_DHCNTPHCM\QTHT_DHCNTPHCM\HK2-2020-2021\THUCTAPDOANHNGHIEP\LEARNC#\Project10-03-2021\ProjectWeb\ProjectWeb\bin\Debug\netcoreapp3.1\ProjectWeb.exe
+E:\QTHT_DHCNTPHCM\QTHT_DHCNTPHCM\HK2-2020-2021\THUCTAPDOANHNGHIEP\LEARNC#\Project10-03-2021\ProjectWeb\ProjectWeb\bin\Debug\netcoreapp3.1\ProjectWeb.deps.json
+E:\QTHT_DHCNTPHCM\QTHT_DHCNTPHCM\HK2-2020-2021\THUCTAPDOANHNGHIEP\LEARNC#\Project10-03-2021\ProjectWeb\ProjectWeb\bin\Debug\netcoreapp3.1\ProjectWeb.runtimeconfig.json
+E:\QTHT_DHCNTPHCM\QTHT_DHCNTPHCM\HK2-2020-2021\THUCTAPDOANHNGHIEP\LEARNC#\Project10-03-2021\ProjectWeb\ProjectWeb\bin\Debug\netcoreapp3.1\ProjectWeb.runtimeconfig.dev.json
+E:\QTHT_DHCNTPHCM\QTHT_DHCNTPHCM\HK2-2020-2021\THUCTAPDOANHNGHIEP\LEARNC#\Project10-03-2021\ProjectWeb\ProjectWeb\bin\Debug\netcoreapp3.1\ProjectWeb.dll
+E:\QTHT_DHCNTPHCM\QTHT_DHCNTPHCM\HK2-2020-2021\THUCTAPDOANHNGHIEP\LEARNC#\Project10-03-2021\ProjectWeb\ProjectWeb\bin\Debug\netcoreapp3.1\ProjectWeb.pdb
+E:\QTHT_DHCNTPHCM\QTHT_DHCNTPHCM\HK2-2020-2021\THUCTAPDOANHNGHIEP\LEARNC#\Project10-03-2021\ProjectWeb\ProjectWeb\obj\Debug\netcoreapp3.1\ProjectWeb.csprojAssemblyReference.cache
+E:\QTHT_DHCNTPHCM\QTHT_DHCNTPHCM\HK2-2020-2021\THUCTAPDOANHNGHIEP\LEARNC#\Project10-03-2021\ProjectWeb\ProjectWeb\obj\Debug\netcoreapp3.1\ProjectWeb.AssemblyInfoInputs.cache
+E:\QTHT_DHCNTPHCM\QTHT_DHCNTPHCM\HK2-2020-2021\THUCTAPDOANHNGHIEP\LEARNC#\Project10-03-2021\ProjectWeb\ProjectWeb\obj\Debug\netcoreapp3.1\ProjectWeb.AssemblyInfo.cs
+E:\QTHT_DHCNTPHCM\QTHT_DHCNTPHCM\HK2-2020-2021\THUCTAPDOANHNGHIEP\LEARNC#\Project10-03-2021\ProjectWeb\ProjectWeb\obj\Debug\netcoreapp3.1\ProjectWeb.csproj.CoreCompileInputs.cache
+E:\QTHT_DHCNTPHCM\QTHT_DHCNTPHCM\HK2-2020-2021\THUCTAPDOANHNGHIEP\LEARNC#\Project10-03-2021\ProjectWeb\ProjectWeb\obj\Debug\netcoreapp3.1\ProjectWeb.MvcApplicationPartsAssemblyInfo.cache
+E:\QTHT_DHCNTPHCM\QTHT_DHCNTPHCM\HK2-2020-2021\THUCTAPDOANHNGHIEP\LEARNC#\Project10-03-2021\ProjectWeb\ProjectWeb\obj\Debug\netcoreapp3.1\staticwebassets\ProjectWeb.StaticWebAssets.Manifest.cache
+E:\QTHT_DHCNTPHCM\QTHT_DHCNTPHCM\HK2-2020-2021\THUCTAPDOANHNGHIEP\LEARNC#\Project10-03-2021\ProjectWeb\ProjectWeb\obj\Debug\netcoreapp3.1\staticwebassets\ProjectWeb.StaticWebAssets.xml
+E:\QTHT_DHCNTPHCM\QTHT_DHCNTPHCM\HK2-2020-2021\THUCTAPDOANHNGHIEP\LEARNC#\Project10-03-2021\ProjectWeb\ProjectWeb\obj\Debug\netcoreapp3.1\scopedcss\bundle\ProjectWeb.styles.css
+E:\QTHT_DHCNTPHCM\QTHT_DHCNTPHCM\HK2-2020-2021\THUCTAPDOANHNGHIEP\LEARNC#\Project10-03-2021\ProjectWeb\ProjectWeb\obj\Debug\netcoreapp3.1\ProjectWeb.RazorTargetAssemblyInfo.cache
+E:\QTHT_DHCNTPHCM\QTHT_DHCNTPHCM\HK2-2020-2021\THUCTAPDOANHNGHIEP\LEARNC#\Project10-03-2021\ProjectWeb\ProjectWeb\obj\Debug\netcoreapp3.1\ProjectWeb.dll
+E:\QTHT_DHCNTPHCM\QTHT_DHCNTPHCM\HK2-2020-2021\THUCTAPDOANHNGHIEP\LEARNC#\Project10-03-2021\ProjectWeb\ProjectWeb\obj\Debug\netcoreapp3.1\ProjectWeb.pdb
+E:\QTHT_DHCNTPHCM\QTHT_DHCNTPHCM\HK2-2020-2021\THUCTAPDOANHNGHIEP\LEARNC#\Project10-03-2021\ProjectWeb\ProjectWeb\obj\Debug\netcoreapp3.1\ProjectWeb.genruntimeconfig.cache
