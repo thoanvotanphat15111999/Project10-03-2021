@@ -17,6 +17,6 @@ namespace pjModels
         [Required(ErrorMessage = "Password is required")]
         public string Password { get; set; }
 
-        public bool Status = false;
+        public bool Status { get; set; }
     }
 }

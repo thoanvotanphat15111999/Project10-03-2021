@@ -33,7 +33,8 @@ namespace pjDataAccess
             {
                 Email = model.Email,
                 SecurityStamp = Guid.NewGuid().ToString(),
-                UserName = model.Username
+                UserName = model.Username,
+                Status = false
             };
             var result = await userManager.CreateAsync(user, model.Password);
             if (!result.Succeeded)
@@ -51,7 +52,8 @@ namespace pjDataAccess
             {
                 Email = model.Email,
                 SecurityStamp = Guid.NewGuid().ToString(),
-                UserName = model.Username
+                UserName = model.Username,
+                Status = true
             };
             var result = await userManager.CreateAsync(user, model.Password);
             if (!result.Succeeded)
