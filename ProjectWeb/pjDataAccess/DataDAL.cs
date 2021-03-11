@@ -6,6 +6,7 @@ using pjModels;
 using System;
 using System.Collections.Generic;
 using System.IdentityModel.Tokens.Jwt;
+using System.Linq;
 using System.Security.Claims;
 using System.Text;
 using System.Threading.Tasks;
@@ -17,11 +18,13 @@ namespace pjDataAccess
         private readonly UserManager<User> userManager;
         private readonly RoleManager<IdentityRole> roleManager;
         private readonly IConfiguration _configuration;
-        public DataDAL(UserManager<User> userManager, RoleManager<IdentityRole> roleManager, IConfiguration configuration)
+        private readonly DataContext data;
+        public DataDAL(DataContext db,UserManager<User> userManager, RoleManager<IdentityRole> roleManager, IConfiguration configuration)
         {
             this.userManager = userManager;
             this.roleManager = roleManager;
             _configuration = configuration;
+            data = db;
         }
         public async Task<dynamic> RegisterEmployee(RegisterModel model)
         {
@@ -71,7 +74,38 @@ namespace pjDataAccess
 
             return (new Response { Status = "Success", Message = "User created successfully!" });
         }
-
+        public IEnumerable<User> Get() {
+            return data.Users.ToList();
+        }
+        public User Get(string id) {
+            User a = data.Users.Find(id);
+            return a;
+        }
+        public User Delete(string id) {
+            User a = data.Users.Find(id);
+            if (a != null) {
+                User b = a;
+                data.Users.Remove(a);
+                data.SaveChanges();
+                return b;
+            }
+            return null;
+        }
+        public User Update(User a) {
+            User old = data.Users.Find(a.Id);
+            if (old != null) {
+                old.Id = a.Id;
+                old.Status = a.Status;
+                old.UserName = a.UserName;
+                old.Email = a.Email;
+                old.PhoneNumber = a.PhoneNumber;
+                data.SaveChanges();
+                return a;
+            }
+            return null;
+        
+        }
+ 
 
     }
 }

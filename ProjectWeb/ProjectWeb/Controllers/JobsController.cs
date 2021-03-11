@@ -1,4 +1,5 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Mvc;
 using pjBusiness;
 using pjDataAccess;
 using pjModels;
@@ -11,6 +12,7 @@ using System.Threading.Tasks;
 
 namespace ProjectWeb.Controllers
 {
+    [Authorize(Roles = UserRoles.Manager)]
     [Route("api/[controller]")]
     [ApiController]
     public class JobsController : ControllerBase
@@ -115,6 +117,17 @@ namespace ProjectWeb.Controllers
 
                 return BadRequest(e.Message);
             }
+        }
+        [HttpPut]
+        [Route("UpdateStatusJob")]
+        public IActionResult UpdateStatusJob([FromBody] Job u)
+        {
+            Job a = Service.UpdateStatusJob(u);
+            if (a != null)
+            {
+                return Ok(a);
+            }
+            return BadRequest(a);
         }
     }
 }

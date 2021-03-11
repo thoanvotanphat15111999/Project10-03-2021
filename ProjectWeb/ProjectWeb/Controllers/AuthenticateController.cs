@@ -4,6 +4,7 @@ using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Configuration;
 using pjBusiness;
+using pjDataAccess;
 using pjModels;
 using System;
 using System.Collections.Generic;
@@ -18,9 +19,9 @@ namespace ProjectWeb.Controllers
     public class AuthenticateController : ControllerBase
     {
         private service services;
-        public AuthenticateController(UserManager<User> userManager, RoleManager<IdentityRole> roleManager, IConfiguration configuration)
+        public AuthenticateController(DataContext db,UserManager<User> userManager, RoleManager<IdentityRole> roleManager, IConfiguration configuration)
         {
-            services = new service(userManager, roleManager, configuration);
+            services = new service(db,userManager, roleManager, configuration);
         }
         //  [AllowAnonymous]
         [HttpPost]

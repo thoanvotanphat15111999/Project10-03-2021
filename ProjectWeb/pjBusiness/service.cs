@@ -20,9 +20,9 @@ namespace pjBusiness
         private readonly IConfiguration _configuration;
         private readonly UserManager<User> userManager;
         private readonly RoleManager<IdentityRole> roleManager;
-        public service(UserManager<User> userManager, RoleManager<IdentityRole> roleManager, IConfiguration configuration)
+        public service(DataContext db,UserManager<User> userManager, RoleManager<IdentityRole> roleManager, IConfiguration configuration)
         {
-            dal = new DataDAL(userManager, roleManager, configuration);
+            dal = new DataDAL(db,userManager, roleManager, configuration);
             this.userManager = userManager;
             this.roleManager = roleManager;
             _configuration = configuration;
@@ -240,7 +240,24 @@ namespace pjBusiness
             }
 
         }
-
+        public Job UpdateStatusJob(Job j) {
+            return jdal.update(j);
+        }
+        public User UpdateAccount(User a)
+        {
+            User b = dal.Update(a);
+            return b;
+        }
+        public IEnumerable<User> Get() {
+            return dal.Get();
+        }
+        public User Get(string id) {
+            return dal.Get(id);
+        }
+        public User Delete(string id) {
+            return dal.Delete(id);
+        
+        }
     }
  
 }

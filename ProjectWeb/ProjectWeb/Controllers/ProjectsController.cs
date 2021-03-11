@@ -1,4 +1,5 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Mvc;
 using pjBusiness;
 using pjDataAccess;
 using pjModels;
@@ -10,7 +11,8 @@ using System.Threading.Tasks;
 // For more information on enabling Web API for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
 
 namespace ProjectWeb.Controllers
-{
+{   
+    [Authorize(Roles =UserRoles.Manager)]
     [Route("api/[controller]")]
     [ApiController]
     public class ProjectsController : ControllerBase

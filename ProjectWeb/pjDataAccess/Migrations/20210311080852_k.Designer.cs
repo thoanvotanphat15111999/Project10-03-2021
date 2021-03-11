@@ -10,8 +10,8 @@ using pjDataAccess;
 namespace pjDataAccess.Migrations
 {
     [DbContext(typeof(DataContext))]
-    [Migration("20210311015049_InitialDB1")]
-    partial class InitialDB1
+    [Migration("20210311080852_k")]
+    partial class k
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
@@ -186,6 +186,9 @@ namespace pjDataAccess.Migrations
                     b.Property<bool>("Status")
                         .HasColumnType("bit");
 
+                    b.Property<string>("UserId")
+                        .HasColumnType("nvarchar(max)");
+
                     b.HasKey("JobId");
 
                     b.HasIndex("ProjectId")
@@ -259,8 +262,8 @@ namespace pjDataAccess.Migrations
                     b.Property<string>("SecurityStamp")
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<string>("Status")
-                        .HasColumnType("nvarchar(max)");
+                    b.Property<bool>("Status")
+                        .HasColumnType("bit");
 
                     b.Property<bool>("TwoFactorEnabled")
                         .HasColumnType("bit");

@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\porta\\Desktop\\git\\Project10-03-2021\\ProjectWeb\\pjModels\\pjModels.csproj": {}
+    "C:\\Users\\Admin\\Desktop\\ThuMucCode\\CodeProject10_03_2021\\Project10-03-2021\\ProjectWeb\\pjModels\\pjModels.csproj": {}
   },
   "projects": {
-    "C:\\Users\\porta\\Desktop\\git\\Project10-03-2021\\ProjectWeb\\pjModels\\pjModels.csproj": {
+    "C:\\Users\\Admin\\Desktop\\ThuMucCode\\CodeProject10_03_2021\\Project10-03-2021\\ProjectWeb\\pjModels\\pjModels.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\porta\\Desktop\\git\\Project10-03-2021\\ProjectWeb\\pjModels\\pjModels.csproj",
+        "projectUniqueName": "C:\\Users\\Admin\\Desktop\\ThuMucCode\\CodeProject10_03_2021\\Project10-03-2021\\ProjectWeb\\pjModels\\pjModels.csproj",
         "projectName": "pjModels",
-        "projectPath": "C:\\Users\\porta\\Desktop\\git\\Project10-03-2021\\ProjectWeb\\pjModels\\pjModels.csproj",
-        "packagesPath": "C:\\Users\\porta\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\porta\\Desktop\\git\\Project10-03-2021\\ProjectWeb\\pjModels\\obj\\",
+        "projectPath": "C:\\Users\\Admin\\Desktop\\ThuMucCode\\CodeProject10_03_2021\\Project10-03-2021\\ProjectWeb\\pjModels\\pjModels.csproj",
+        "packagesPath": "C:\\Users\\Admin\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Admin\\Desktop\\ThuMucCode\\CodeProject10_03_2021\\Project10-03-2021\\ProjectWeb\\pjModels\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\porta\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Admin\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
