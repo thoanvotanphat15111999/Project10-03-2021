@@ -13,41 +13,42 @@ namespace ProjectWeb.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
-    public class ProjectsController : ControllerBase
+    public class JobsController : ControllerBase
     {
 
-
         service Service;
-        public ProjectsController(DataContext _context)
+        public JobsController(DataContext _context)
         {
             Service = new service(_context);
         }
-        // GET: api/<ProjectsController>
+        // GET: api/<JobsController>
         [HttpGet]
-        public IActionResult  Get()
+        public IActionResult Get()
         {
             try
             {
-                return Ok(Service.GetallProject());
+                ICollection<Job> listjob = Service.getallJob();
+                return Ok(listjob);
             }
             catch (Exception e)
             {
+
                 return BadRequest(e.Message);
             }
         }
 
-        // GET api/<ProjectsController>/5
+        // GET api/<JobsController>/5
         [HttpGet("{id}")]
         public IActionResult Get(int id)
         {
             try
             {
-                Project project = Service.GetByIdProject(id);
-                if (project != null)
-                {
-                    return Ok(project);
+                Job job = Service.getJob(id);
+                if (job != null){
+                    return Ok(job);
                 }
                 return BadRequest("Not Find Id");
+                
             }
             catch (Exception e)
             {
@@ -56,16 +57,16 @@ namespace ProjectWeb.Controllers
             }
         }
 
-        // POST api/<ProjectsController>
+        // POST api/<JobsController>
         [HttpPost]
-        public IActionResult Post([FromBody] Project project)
+        public IActionResult Post([FromBody] Job job)
         {
             try
             {
-                Project newproject = Service.addProject(project);
-                if (newproject != null)
+                Job newjob =Service.addJob(job);
+                if (newjob != null)
                 {
-                    return Ok(newproject);
+                    return Ok(newjob);
                 }
                 return BadRequest("Add false");
             }
@@ -76,45 +77,30 @@ namespace ProjectWeb.Controllers
             }
         }
 
-        // PUT api/<ProjectsController>/5
-        [HttpPut]
-        public IActionResult Put([FromBody] Project project)
+        // PUT api/<JobsController>/5
+        [HttpPut("{id}")]
+        public void Put(int id, [FromBody] string value)
         {
-            try
-            {
-                  Project newproject = Service.updateproject(project);
-                  if (newproject != null)
-                  {
-                        return Ok(newproject);
-                  }
-                
-                return BadRequest("Not Find Id");
-            }
-            catch (Exception e)
-            {
 
-                return BadRequest(e.Message);
-            }
         }
 
-        // DELETE api/<ProjectsController>/5
+        // DELETE api/<JobsController>/5
         [HttpDelete("{id}")]
         public IActionResult Delete(int id)
         {
             try
             {
-                Project project = Service.deleteproject(id);
-                if (project != null)
+               Job job = Service.deleteJob(id);
+                if (job != null)
                 {
-                    return Ok(project);
+                    return Ok(job);
                 }
-                return BadRequest("Not Find Id");
-
+                return BadRequest("Delete is Fail");
             }
             catch (Exception e)
             {
 
-                return BadRequest(e);
+                return BadRequest(e.Message);
             }
         }
     }

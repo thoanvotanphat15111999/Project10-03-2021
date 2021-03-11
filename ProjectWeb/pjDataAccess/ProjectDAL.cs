@@ -73,17 +73,15 @@ namespace pjDataAccess
 
         public Project update(Project Tmodel)
         {
-            try
-            {
-                _context.Entry(Tmodel).State = Microsoft.EntityFrameworkCore.EntityState.Modified;
-                _context.SaveChanges();
-                return Tmodel;
-            }
-            catch (Exception e)
-            {
-                throw e;
-            }
 
+            _context.Entry(Tmodel).State = Microsoft.EntityFrameworkCore.EntityState.Modified;
+            _context.SaveChanges();
+            return Tmodel;
+        }
+
+        public void update1(Project t1, Project t2)
+        {
+            throw new NotImplementedException();
         }
     }
 }

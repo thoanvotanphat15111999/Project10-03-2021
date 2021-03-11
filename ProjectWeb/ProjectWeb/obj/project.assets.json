@@ -6722,19 +6722,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Minh Tung\\.nuget\\packages\\": {}
+    "C:\\Users\\porta\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "E:\\QTHT_DHCNTPHCM\\QTHT_DHCNTPHCM\\HK2-2020-2021\\THUCTAPDOANHNGHIEP\\LEARNC#\\Project10-03-2021\\ProjectWeb\\ProjectWeb\\ProjectWeb.csproj",
+      "projectUniqueName": "D:\\LearnC#\\Project10-03-2021\\ProjectWeb\\ProjectWeb\\ProjectWeb.csproj",
       "projectName": "ProjectWeb",
-      "projectPath": "E:\\QTHT_DHCNTPHCM\\QTHT_DHCNTPHCM\\HK2-2020-2021\\THUCTAPDOANHNGHIEP\\LEARNC#\\Project10-03-2021\\ProjectWeb\\ProjectWeb\\ProjectWeb.csproj",
-      "packagesPath": "C:\\Users\\Minh Tung\\.nuget\\packages\\",
-      "outputPath": "E:\\QTHT_DHCNTPHCM\\QTHT_DHCNTPHCM\\HK2-2020-2021\\THUCTAPDOANHNGHIEP\\LEARNC#\\Project10-03-2021\\ProjectWeb\\ProjectWeb\\obj\\",
+      "projectPath": "D:\\LearnC#\\Project10-03-2021\\ProjectWeb\\ProjectWeb\\ProjectWeb.csproj",
+      "packagesPath": "C:\\Users\\porta\\.nuget\\packages\\",
+      "outputPath": "D:\\LearnC#\\Project10-03-2021\\ProjectWeb\\ProjectWeb\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\Minh Tung\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\porta\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -6748,11 +6748,11 @@
         "netcoreapp3.1": {
           "targetAlias": "netcoreapp3.1",
           "projectReferences": {
-            "E:\\QTHT_DHCNTPHCM\\QTHT_DHCNTPHCM\\HK2-2020-2021\\THUCTAPDOANHNGHIEP\\LEARNC#\\Project10-03-2021\\ProjectWeb\\pjBusiness\\pjBusiness.csproj": {
-              "projectPath": "E:\\QTHT_DHCNTPHCM\\QTHT_DHCNTPHCM\\HK2-2020-2021\\THUCTAPDOANHNGHIEP\\LEARNC#\\Project10-03-2021\\ProjectWeb\\pjBusiness\\pjBusiness.csproj"
+            "D:\\LearnC#\\Project10-03-2021\\ProjectWeb\\pjBusiness\\pjBusiness.csproj": {
+              "projectPath": "D:\\LearnC#\\Project10-03-2021\\ProjectWeb\\pjBusiness\\pjBusiness.csproj"
             },
-            "E:\\QTHT_DHCNTPHCM\\QTHT_DHCNTPHCM\\HK2-2020-2021\\THUCTAPDOANHNGHIEP\\LEARNC#\\Project10-03-2021\\ProjectWeb\\pjModels\\pjModels.csproj": {
-              "projectPath": "E:\\QTHT_DHCNTPHCM\\QTHT_DHCNTPHCM\\HK2-2020-2021\\THUCTAPDOANHNGHIEP\\LEARNC#\\Project10-03-2021\\ProjectWeb\\pjModels\\pjModels.csproj"
+            "D:\\LearnC#\\Project10-03-2021\\ProjectWeb\\pjModels\\pjModels.csproj": {
+              "projectPath": "D:\\LearnC#\\Project10-03-2021\\ProjectWeb\\pjModels\\pjModels.csproj"
             }
           }
         }
@@ -6808,7 +6808,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.102\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.103\\RuntimeIdentifierGraph.json"
       }
     }
   }

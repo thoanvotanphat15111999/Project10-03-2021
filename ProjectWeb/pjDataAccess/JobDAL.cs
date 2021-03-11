@@ -1,6 +1,7 @@
 ﻿using pjModels;
 using System;
 using System.Collections.Generic;
+using System.Linq;
 using System.Text;
 
 namespace pjDataAccess
@@ -12,31 +13,87 @@ namespace pjDataAccess
         {
             _context = context;
         }
-        Job IFunctional<Job>.add(Job Tmodel)
+
+        public Job add(Job Tmodel)
         {
-            throw new NotImplementedException();
+            try
+            {
+                _context.Jobs.Add(Tmodel);
+                _context.SaveChanges();
+                return Tmodel;
+            }
+            catch (Exception e)
+            {
+
+                throw e;
+            }
         }
 
-        Job IFunctional<Job>.delete(Job Tmodel)
+        public Job delete(Job Tmodel)
         {
 
-            throw new NotImplementedException();
+            try
+            {
+                _context.Jobs.Remove(Tmodel);
+                _context.SaveChanges();
+                return Tmodel;
+            }
+            catch (Exception e)
+            {
+                throw e;
+            }
         }
 
-        Job IFunctional<Job>.get(int id)
+        public Job get(int id)
         {
+            try
+            {
+                Job job = _context.Jobs.FirstOrDefault(e => e.JobId==id);
+                return job;
+            }
+            catch (Exception e)
+            {
 
-            throw new NotImplementedException();
+                throw e;
+            }
         }
 
-        ICollection<Job> IFunctional<Job>.getall()
+        public ICollection<Job> getall()
         {
-            throw new NotImplementedException();
+            try
+            {
+                List<Job> listjob = _context.Jobs.ToList();
+                return listjob;
+            }
+            catch (Exception e)
+            {
+                throw e;
+            }
         }
 
-        Job IFunctional<Job>.update(Job Tmodel)
+        public Job update(Job Tmodel)
         {
-            throw new NotImplementedException();
+            _context.Entry(Tmodel).State = Microsoft.EntityFrameworkCore.EntityState.Modified;
+            _context.SaveChanges();
+            return Tmodel;
+        }
+
+        public void update1(Job t1, Job t2)
+        {
+            try
+            {
+                t1.JobName = t2.JobName;
+                t1.ProjectId = t2.ProjectId;
+                t1.Status = t2.Status;
+                t1.UserId = t2.UserId;
+
+                _context.SaveChanges();
+            }
+            catch (Exception e)
+            {
+
+                throw e;
+            }
         }
     }
 }

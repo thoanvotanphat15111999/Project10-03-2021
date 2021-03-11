@@ -6645,19 +6645,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Minh Tung\\.nuget\\packages\\": {}
+    "C:\\Users\\porta\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "E:\\QTHT_DHCNTPHCM\\QTHT_DHCNTPHCM\\HK2-2020-2021\\THUCTAPDOANHNGHIEP\\LEARNC#\\Project10-03-2021\\ProjectWeb\\pjModels\\pjModels.csproj",
+      "projectUniqueName": "D:\\LearnC#\\Project10-03-2021\\ProjectWeb\\pjModels\\pjModels.csproj",
       "projectName": "pjModels",
-      "projectPath": "E:\\QTHT_DHCNTPHCM\\QTHT_DHCNTPHCM\\HK2-2020-2021\\THUCTAPDOANHNGHIEP\\LEARNC#\\Project10-03-2021\\ProjectWeb\\pjModels\\pjModels.csproj",
-      "packagesPath": "C:\\Users\\Minh Tung\\.nuget\\packages\\",
-      "outputPath": "E:\\QTHT_DHCNTPHCM\\QTHT_DHCNTPHCM\\HK2-2020-2021\\THUCTAPDOANHNGHIEP\\LEARNC#\\Project10-03-2021\\ProjectWeb\\pjModels\\obj\\",
+      "projectPath": "D:\\LearnC#\\Project10-03-2021\\ProjectWeb\\pjModels\\pjModels.csproj",
+      "packagesPath": "C:\\Users\\porta\\.nuget\\packages\\",
+      "outputPath": "D:\\LearnC#\\Project10-03-2021\\ProjectWeb\\pjModels\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\Minh Tung\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\porta\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -6724,7 +6724,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.102\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.103\\RuntimeIdentifierGraph.json"
       }
     }
   }

@@ -13,6 +13,8 @@ namespace pjModels
         public  int ProjectId { get; set; }
         public string ProjectName { get; set; }
         
+        [ForeignKey("UserId")]
+        public string UserId { get; set; }
         public virtual User User { get; set; }
         public virtual Job Job { get; set; }
     }
