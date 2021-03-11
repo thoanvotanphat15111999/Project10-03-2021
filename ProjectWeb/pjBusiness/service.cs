@@ -68,8 +68,8 @@ namespace pjBusiness
         }
          public  Project updateproject(Project project)
         {
-                   pdal.update(project);
-                   return project;  
+                 Project newproject = pdal.update(project);
+                   return newproject;  
         }
 
         public Project GetByIdProject( int id)
@@ -155,6 +155,28 @@ namespace pjBusiness
 
                 throw e;
             }
+        }
+
+        public Job updatejob(Job job)
+        {
+            try
+            {
+                //Job newjob = jdal.get(id);
+                //if (newjob != null)
+                //{
+                //    jdal.update1(newjob,job);
+                //    return job;
+                //}
+                //return null;
+                Job newjob = jdal.update(job);
+                return newjob;
+            }
+            catch (Exception e)
+            {
+
+                throw e;
+            }
+
         }
 
     }

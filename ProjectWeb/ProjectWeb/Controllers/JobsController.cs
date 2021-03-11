@@ -78,10 +78,23 @@ namespace ProjectWeb.Controllers
         }
 
         // PUT api/<JobsController>/5
-        [HttpPut("{id}")]
-        public void Put(int id, [FromBody] string value)
+        [HttpPut]
+        public IActionResult Put([FromBody] Job job)
         {
+            try
+            {
+                Job newjob = Service.updatejob(job);
+                if (newjob != null)
+                {
+                    return Ok(newjob);
+                }
+                return BadRequest("Not Find Id");
+            }
+            catch (Exception e)
+            {
 
+                return BadRequest(e.Message);
+            }
         }
 
         // DELETE api/<JobsController>/5
