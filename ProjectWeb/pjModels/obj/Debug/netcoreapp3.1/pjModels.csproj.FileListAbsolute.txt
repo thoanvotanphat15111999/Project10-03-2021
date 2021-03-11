@@ -34,3 +34,15 @@ D:\LearnC#\Project10-03-2021\ProjectWeb\pjModels\obj\Debug\netcoreapp3.1\pjModel
 D:\LearnC#\Project10-03-2021\ProjectWeb\pjModels\obj\Debug\netcoreapp3.1\pjModels.dll
 D:\LearnC#\Project10-03-2021\ProjectWeb\pjModels\obj\Debug\netcoreapp3.1\pjModels.pdb
 D:\LearnC#\Project10-03-2021\ProjectWeb\pjModels\obj\Debug\netcoreapp3.1\pjModels.genruntimeconfig.cache
+C:\Users\porta\Desktop\git\Project10-03-2021\ProjectWeb\pjModels\bin\Debug\netcoreapp3.1\pjModels.deps.json
+C:\Users\porta\Desktop\git\Project10-03-2021\ProjectWeb\pjModels\bin\Debug\netcoreapp3.1\pjModels.runtimeconfig.json
+C:\Users\porta\Desktop\git\Project10-03-2021\ProjectWeb\pjModels\bin\Debug\netcoreapp3.1\pjModels.runtimeconfig.dev.json
+C:\Users\porta\Desktop\git\Project10-03-2021\ProjectWeb\pjModels\bin\Debug\netcoreapp3.1\pjModels.dll
+C:\Users\porta\Desktop\git\Project10-03-2021\ProjectWeb\pjModels\bin\Debug\netcoreapp3.1\pjModels.pdb
+C:\Users\porta\Desktop\git\Project10-03-2021\ProjectWeb\pjModels\obj\Debug\netcoreapp3.1\pjModels.csprojAssemblyReference.cache
+C:\Users\porta\Desktop\git\Project10-03-2021\ProjectWeb\pjModels\obj\Debug\netcoreapp3.1\pjModels.AssemblyInfoInputs.cache
+C:\Users\porta\Desktop\git\Project10-03-2021\ProjectWeb\pjModels\obj\Debug\netcoreapp3.1\pjModels.AssemblyInfo.cs
+C:\Users\porta\Desktop\git\Project10-03-2021\ProjectWeb\pjModels\obj\Debug\netcoreapp3.1\pjModels.csproj.CoreCompileInputs.cache
+C:\Users\porta\Desktop\git\Project10-03-2021\ProjectWeb\pjModels\obj\Debug\netcoreapp3.1\pjModels.dll
+C:\Users\porta\Desktop\git\Project10-03-2021\ProjectWeb\pjModels\obj\Debug\netcoreapp3.1\pjModels.pdb
+C:\Users\porta\Desktop\git\Project10-03-2021\ProjectWeb\pjModels\obj\Debug\netcoreapp3.1\pjModels.genruntimeconfig.cache

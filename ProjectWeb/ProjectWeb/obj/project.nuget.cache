@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "GZ5fDyOyNk8fsyOzkonl+pTOJZmxVdQRmHVlHbitSVByhKJBmPe1WQUZxBda/4qEtSlGoy0jeaIdiGVBInqOKQ==",
+  "dgSpecHash": "PxNKqBzIwka5qg1aVBTAOr17YdQH9e2Ik8xWcLSAlmLqd41XCFfoxET39SDrYD21Zo60NFzqeWHBQJ9cvwVKWQ==",
   "success": true,
-  "projectFilePath": "D:\\LearnC#\\Project10-03-2021\\ProjectWeb\\ProjectWeb\\ProjectWeb.csproj",
+  "projectFilePath": "C:\\Users\\porta\\Desktop\\git\\Project10-03-2021\\ProjectWeb\\ProjectWeb\\ProjectWeb.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\porta\\.nuget\\packages\\humanizer.core\\2.8.26\\humanizer.core.2.8.26.nupkg.sha512",
     "C:\\Users\\porta\\.nuget\\packages\\microsoft.aspnetcore.authentication\\2.2.0\\microsoft.aspnetcore.authentication.2.2.0.nupkg.sha512",

@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "Z+tePljBFXZlfGjXVdxzSUDLV5Agz9/4VAGhwDHJuGwX90vEDDbSRuZ57yjxIdK0OcNJtcQEdVkvo9+161x8eg==",
+  "dgSpecHash": "1L9DRhk/rl4vrRn/3e037JxDV1cgY94gBkaFYhw9BDk2vtiHvYfYLEtZDsGOVwaK2b3kCfIWyyHziELYfN8ZXQ==",
   "success": true,
-  "projectFilePath": "D:\\LearnC#\\Project10-03-2021\\ProjectWeb\\pjDataAccess\\pjDataAccess.csproj",
+  "projectFilePath": "C:\\Users\\porta\\Desktop\\git\\Project10-03-2021\\ProjectWeb\\pjDataAccess\\pjDataAccess.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\porta\\.nuget\\packages\\humanizer.core\\2.8.26\\humanizer.core.2.8.26.nupkg.sha512",
     "C:\\Users\\porta\\.nuget\\packages\\microsoft.aspnetcore.authentication\\2.2.0\\microsoft.aspnetcore.authentication.2.2.0.nupkg.sha512",

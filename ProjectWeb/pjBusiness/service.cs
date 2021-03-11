@@ -2,6 +2,13 @@
 using System;
 using pjDataAccess;
 using System.Collections.Generic;
+using Microsoft.AspNetCore.Identity;
+using Microsoft.Extensions.Configuration;
+using System.Threading.Tasks;
+using System.IdentityModel.Tokens.Jwt;
+using System.Security.Claims;
+using Microsoft.IdentityModel.Tokens;
+using System.Text;
 
 namespace pjBusiness
 {
@@ -9,12 +16,67 @@ namespace pjBusiness
     {
         private ProjectDAL pdal;
         private JobDAL jdal;
-
+        private DataDAL dal;
+        private readonly IConfiguration _configuration;
+        private readonly UserManager<User> userManager;
+        private readonly RoleManager<IdentityRole> roleManager;
+        public service(UserManager<User> userManager, RoleManager<IdentityRole> roleManager, IConfiguration configuration)
+        {
+            dal = new DataDAL(userManager, roleManager, configuration);
+            this.userManager = userManager;
+            this.roleManager = roleManager;
+            _configuration = configuration;
+        }
         public service(DataContext _context)
         {
             pdal = new ProjectDAL(_context);
             jdal = new JobDAL(_context);
         }
+        // Authenticate
+        public async Task<dynamic> Login(LoginModel model)
+        {
+            var user = await userManager.FindByNameAsync(model.Username);
+            if (user != null && await userManager.CheckPasswordAsync(user, model.Password))
+            {
+                var userRoles = await userManager.GetRolesAsync(user);
+                var authClaims = new List<Claim>
+                {
+                    new Claim(ClaimTypes.Name,user.UserName),
+                    new Claim(JwtRegisteredClaimNames.Jti,Guid.NewGuid().ToString())
+                };
+                foreach (var userRole in userRoles)
+                {
+                    authClaims.Add(new Claim(ClaimTypes.Role, userRole));
+                }
+                var authSigningKey = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(_configuration["JWT:Secret"]));
+
+                var token = new JwtSecurityToken(
+                    issuer: _configuration["JWT:ValidIssuer"],
+                    audience: _configuration["JWT:ValidAudience"],
+                    expires: DateTime.Now.AddHours(3),
+                    claims: authClaims,
+                    signingCredentials: new SigningCredentials(authSigningKey, SecurityAlgorithms.HmacSha256)
+                    );
+
+                return (new
+                {
+                    token = new JwtSecurityTokenHandler().WriteToken(token),
+                    expiration = token.ValidTo
+                });
+            }
+            return null;
+        }
+        public async Task<object> RegisterEmployee(RegisterModel model)
+        {
+            var z = await dal.RegisterEmployee(model);
+            return z;
+        }
+        public async Task<object> RegisterManager(RegisterModel model)
+        {
+            var z = await dal.RegisterManager(model);
+            return z;
+        }
+
         // PROJECT Manager
         public ICollection<Project> GetallProject()
         {
