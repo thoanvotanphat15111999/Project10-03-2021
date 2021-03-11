@@ -49,6 +49,22 @@ namespace ProjectWeb.Controllers
         public User Remove(string id) {
             return svc.Delete(id);
         }
+        [HttpGet]
+        [Route("Job/{id}")]
+        public IActionResult GetJob(string id)
+        {
+            try
+            {
+                List<Job> DS = new List<Job>();
+                DS = svc.getjob(id);
+                return Ok(DS);
+            }
+            catch (Exception e)
+            {
+
+                return BadRequest(e.Message);
+            }
+        }
 
     }
 }

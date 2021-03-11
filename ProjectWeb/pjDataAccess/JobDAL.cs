@@ -95,5 +95,18 @@ namespace pjDataAccess
                 throw e;
             }
         }
+        public List<Job> getUserID(string id)
+        {
+            try
+            {
+                List<Job> ds = _context.Jobs.Where(e=> e.UserId == id).ToList();
+                return ds;
+            }
+            catch (Exception e)
+            {
+
+                throw e;
+            }
+        }
     }
 }

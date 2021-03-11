@@ -26,6 +26,8 @@ namespace pjBusiness
             this.userManager = userManager;
             this.roleManager = roleManager;
             _configuration = configuration;
+            jdal = new JobDAL(db);
+        
         }
         public service(DataContext _context)
         {
@@ -257,6 +259,20 @@ namespace pjBusiness
         public User Delete(string id) {
             return dal.Delete(id);
         
+        }
+        public List<Job> getjob(string userid)
+        {
+            try
+            {
+                List<Job> DS = new List<Job>();
+                DS = jdal.getUserID(userid);
+                return DS;
+            }
+            catch (Exception e)
+            {
+
+                throw e;
+            }
         }
     }
  
