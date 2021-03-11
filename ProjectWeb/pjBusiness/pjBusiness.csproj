@@ -15,4 +15,9 @@
     </PackageReference>
   </ItemGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\pjDataAccess\pjDataAccess.csproj" />
+    <ProjectReference Include="..\pjModels\pjModels.csproj" />
+  </ItemGroup>
+
 </Project>

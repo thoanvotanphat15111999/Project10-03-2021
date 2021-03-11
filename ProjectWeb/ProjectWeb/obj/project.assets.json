@@ -1909,6 +1909,27 @@
           "lib/netstandard1.3/System.Xml.XmlSerializer.dll": {}
         }
       },
+      "pjBusiness/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v3.1",
+        "dependencies": {
+          "Microsoft.AspNetCore.Authentication.JwtBearer": "3.1.13",
+          "Microsoft.AspNetCore.Identity": "2.2.0",
+          "Microsoft.AspNetCore.Identity.EntityFrameworkCore": "5.0.4",
+          "Microsoft.EntityFrameworkCore.SqlServer": "5.0.4",
+          "pjDataAccess": "1.0.0",
+          "pjModels": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/pjBusiness.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/pjBusiness.dll": {}
+        },
+        "frameworkReferences": [
+          "Microsoft.AspNetCore.App"
+        ]
+      },
       "pjDataAccess/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v3.1",
@@ -1924,7 +1945,10 @@
         },
         "runtime": {
           "bin/placeholder/pjDataAccess.dll": {}
-        }
+        },
+        "frameworkReferences": [
+          "Microsoft.AspNetCore.App"
+        ]
       },
       "pjModels/1.0.0": {
         "type": "project",
@@ -1940,7 +1964,10 @@
         },
         "runtime": {
           "bin/placeholder/pjModels.dll": {}
-        }
+        },
+        "frameworkReferences": [
+          "Microsoft.AspNetCore.App"
+        ]
       }
     }
   },
@@ -6667,6 +6694,11 @@
         "system.xml.xmlserializer.nuspec"
       ]
     },
+    "pjBusiness/1.0.0": {
+      "type": "project",
+      "path": "../pjBusiness/pjBusiness.csproj",
+      "msbuildProject": "../pjBusiness/pjBusiness.csproj"
+    },
     "pjDataAccess/1.0.0": {
       "type": "project",
       "path": "../pjDataAccess/pjDataAccess.csproj",
@@ -6685,24 +6717,24 @@
       "Microsoft.AspNetCore.Identity.EntityFrameworkCore >= 5.0.4",
       "Microsoft.EntityFrameworkCore.SqlServer >= 5.0.4",
       "Microsoft.EntityFrameworkCore.Tools >= 5.0.4",
-      "pjDataAccess >= 1.0.0",
+      "pjBusiness >= 1.0.0",
       "pjModels >= 1.0.0"
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Viet Dep Trai\\.nuget\\packages\\": {}
+    "C:\\Users\\Minh Tung\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Viet Dep Trai\\Desktop\\Project10_03_2021\\Project10-03-2021\\ProjectWeb\\ProjectWeb\\ProjectWeb.csproj",
+      "projectUniqueName": "E:\\QTHT_DHCNTPHCM\\QTHT_DHCNTPHCM\\HK2-2020-2021\\THUCTAPDOANHNGHIEP\\LEARNC#\\Project10-03-2021\\ProjectWeb\\ProjectWeb\\ProjectWeb.csproj",
       "projectName": "ProjectWeb",
-      "projectPath": "C:\\Users\\Viet Dep Trai\\Desktop\\Project10_03_2021\\Project10-03-2021\\ProjectWeb\\ProjectWeb\\ProjectWeb.csproj",
-      "packagesPath": "C:\\Users\\Viet Dep Trai\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Viet Dep Trai\\Desktop\\Project10_03_2021\\Project10-03-2021\\ProjectWeb\\ProjectWeb\\obj\\",
+      "projectPath": "E:\\QTHT_DHCNTPHCM\\QTHT_DHCNTPHCM\\HK2-2020-2021\\THUCTAPDOANHNGHIEP\\LEARNC#\\Project10-03-2021\\ProjectWeb\\ProjectWeb\\ProjectWeb.csproj",
+      "packagesPath": "C:\\Users\\Minh Tung\\.nuget\\packages\\",
+      "outputPath": "E:\\QTHT_DHCNTPHCM\\QTHT_DHCNTPHCM\\HK2-2020-2021\\THUCTAPDOANHNGHIEP\\LEARNC#\\Project10-03-2021\\ProjectWeb\\ProjectWeb\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\Viet Dep Trai\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\Minh Tung\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -6716,11 +6748,11 @@
         "netcoreapp3.1": {
           "targetAlias": "netcoreapp3.1",
           "projectReferences": {
-            "C:\\Users\\Viet Dep Trai\\Desktop\\Project10_03_2021\\Project10-03-2021\\ProjectWeb\\pjDataAccess\\pjDataAccess.csproj": {
-              "projectPath": "C:\\Users\\Viet Dep Trai\\Desktop\\Project10_03_2021\\Project10-03-2021\\ProjectWeb\\pjDataAccess\\pjDataAccess.csproj"
+            "E:\\QTHT_DHCNTPHCM\\QTHT_DHCNTPHCM\\HK2-2020-2021\\THUCTAPDOANHNGHIEP\\LEARNC#\\Project10-03-2021\\ProjectWeb\\pjBusiness\\pjBusiness.csproj": {
+              "projectPath": "E:\\QTHT_DHCNTPHCM\\QTHT_DHCNTPHCM\\HK2-2020-2021\\THUCTAPDOANHNGHIEP\\LEARNC#\\Project10-03-2021\\ProjectWeb\\pjBusiness\\pjBusiness.csproj"
             },
-            "C:\\Users\\Viet Dep Trai\\Desktop\\Project10_03_2021\\Project10-03-2021\\ProjectWeb\\pjModels\\pjModels.csproj": {
-              "projectPath": "C:\\Users\\Viet Dep Trai\\Desktop\\Project10_03_2021\\Project10-03-2021\\ProjectWeb\\pjModels\\pjModels.csproj"
+            "E:\\QTHT_DHCNTPHCM\\QTHT_DHCNTPHCM\\HK2-2020-2021\\THUCTAPDOANHNGHIEP\\LEARNC#\\Project10-03-2021\\ProjectWeb\\pjModels\\pjModels.csproj": {
+              "projectPath": "E:\\QTHT_DHCNTPHCM\\QTHT_DHCNTPHCM\\HK2-2020-2021\\THUCTAPDOANHNGHIEP\\LEARNC#\\Project10-03-2021\\ProjectWeb\\pjModels\\pjModels.csproj"
             }
           }
         }
@@ -6776,7 +6808,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.200\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.102\\RuntimeIdentifierGraph.json"
       }
     }
   }

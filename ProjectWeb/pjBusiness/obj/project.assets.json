@@ -1908,6 +1908,45 @@
         "runtime": {
           "lib/netstandard1.3/System.Xml.XmlSerializer.dll": {}
         }
+      },
+      "pjDataAccess/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v3.1",
+        "dependencies": {
+          "Microsoft.AspNetCore.Authentication.JwtBearer": "3.1.13",
+          "Microsoft.AspNetCore.Identity": "2.2.0",
+          "Microsoft.AspNetCore.Identity.EntityFrameworkCore": "5.0.4",
+          "Microsoft.EntityFrameworkCore.SqlServer": "5.0.4",
+          "pjModels": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/pjDataAccess.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/pjDataAccess.dll": {}
+        },
+        "frameworkReferences": [
+          "Microsoft.AspNetCore.App"
+        ]
+      },
+      "pjModels/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v3.1",
+        "dependencies": {
+          "Microsoft.AspNetCore.Authentication.JwtBearer": "3.1.13",
+          "Microsoft.AspNetCore.Identity": "2.2.0",
+          "Microsoft.AspNetCore.Identity.EntityFrameworkCore": "5.0.4",
+          "Microsoft.EntityFrameworkCore.SqlServer": "5.0.4"
+        },
+        "compile": {
+          "bin/placeholder/pjModels.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/pjModels.dll": {}
+        },
+        "frameworkReferences": [
+          "Microsoft.AspNetCore.App"
+        ]
       }
     }
   },
@@ -6633,6 +6672,16 @@
         "system.xml.xmlserializer.4.3.0.nupkg.sha512",
         "system.xml.xmlserializer.nuspec"
       ]
+    },
+    "pjDataAccess/1.0.0": {
+      "type": "project",
+      "path": "../pjDataAccess/pjDataAccess.csproj",
+      "msbuildProject": "../pjDataAccess/pjDataAccess.csproj"
+    },
+    "pjModels/1.0.0": {
+      "type": "project",
+      "path": "../pjModels/pjModels.csproj",
+      "msbuildProject": "../pjModels/pjModels.csproj"
     }
   },
   "projectFileDependencyGroups": {
@@ -6641,23 +6690,25 @@
       "Microsoft.AspNetCore.Identity >= 2.2.0",
       "Microsoft.AspNetCore.Identity.EntityFrameworkCore >= 5.0.4",
       "Microsoft.EntityFrameworkCore.SqlServer >= 5.0.4",
-      "Microsoft.EntityFrameworkCore.Tools >= 5.0.4"
+      "Microsoft.EntityFrameworkCore.Tools >= 5.0.4",
+      "pjDataAccess >= 1.0.0",
+      "pjModels >= 1.0.0"
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Viet Dep Trai\\.nuget\\packages\\": {}
+    "C:\\Users\\Minh Tung\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Viet Dep Trai\\Desktop\\Project10_03_2021\\Project10-03-2021\\ProjectWeb\\pjBusiness\\pjBusiness.csproj",
+      "projectUniqueName": "E:\\QTHT_DHCNTPHCM\\QTHT_DHCNTPHCM\\HK2-2020-2021\\THUCTAPDOANHNGHIEP\\LEARNC#\\Project10-03-2021\\ProjectWeb\\pjBusiness\\pjBusiness.csproj",
       "projectName": "pjBusiness",
-      "projectPath": "C:\\Users\\Viet Dep Trai\\Desktop\\Project10_03_2021\\Project10-03-2021\\ProjectWeb\\pjBusiness\\pjBusiness.csproj",
-      "packagesPath": "C:\\Users\\Viet Dep Trai\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Viet Dep Trai\\Desktop\\Project10_03_2021\\Project10-03-2021\\ProjectWeb\\pjBusiness\\obj\\",
+      "projectPath": "E:\\QTHT_DHCNTPHCM\\QTHT_DHCNTPHCM\\HK2-2020-2021\\THUCTAPDOANHNGHIEP\\LEARNC#\\Project10-03-2021\\ProjectWeb\\pjBusiness\\pjBusiness.csproj",
+      "packagesPath": "C:\\Users\\Minh Tung\\.nuget\\packages\\",
+      "outputPath": "E:\\QTHT_DHCNTPHCM\\QTHT_DHCNTPHCM\\HK2-2020-2021\\THUCTAPDOANHNGHIEP\\LEARNC#\\Project10-03-2021\\ProjectWeb\\pjBusiness\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\Viet Dep Trai\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\Minh Tung\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -6670,7 +6721,14 @@
       "frameworks": {
         "netcoreapp3.1": {
           "targetAlias": "netcoreapp3.1",
-          "projectReferences": {}
+          "projectReferences": {
+            "E:\\QTHT_DHCNTPHCM\\QTHT_DHCNTPHCM\\HK2-2020-2021\\THUCTAPDOANHNGHIEP\\LEARNC#\\Project10-03-2021\\ProjectWeb\\pjDataAccess\\pjDataAccess.csproj": {
+              "projectPath": "E:\\QTHT_DHCNTPHCM\\QTHT_DHCNTPHCM\\HK2-2020-2021\\THUCTAPDOANHNGHIEP\\LEARNC#\\Project10-03-2021\\ProjectWeb\\pjDataAccess\\pjDataAccess.csproj"
+            },
+            "E:\\QTHT_DHCNTPHCM\\QTHT_DHCNTPHCM\\HK2-2020-2021\\THUCTAPDOANHNGHIEP\\LEARNC#\\Project10-03-2021\\ProjectWeb\\pjModels\\pjModels.csproj": {
+              "projectPath": "E:\\QTHT_DHCNTPHCM\\QTHT_DHCNTPHCM\\HK2-2020-2021\\THUCTAPDOANHNGHIEP\\LEARNC#\\Project10-03-2021\\ProjectWeb\\pjModels\\pjModels.csproj"
+            }
+          }
         }
       },
       "warningProperties": {
@@ -6717,11 +6775,14 @@
         "assetTargetFallback": true,
         "warn": true,
         "frameworkReferences": {
+          "Microsoft.AspNetCore.App": {
+            "privateAssets": "none"
+          },
           "Microsoft.NETCore.App": {
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.200\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.102\\RuntimeIdentifierGraph.json"
       }
     }
   }

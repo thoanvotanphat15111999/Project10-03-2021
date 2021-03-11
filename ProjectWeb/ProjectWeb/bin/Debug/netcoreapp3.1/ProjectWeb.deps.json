@@ -8,14 +8,7 @@
       "TRACE",
       "DEBUG",
       "NETCOREAPP",
-      "NETCOREAPP3_1",
-      "NETCOREAPP1_0_OR_GREATER",
-      "NETCOREAPP1_1_OR_GREATER",
-      "NETCOREAPP2_0_OR_GREATER",
-      "NETCOREAPP2_1_OR_GREATER",
-      "NETCOREAPP2_2_OR_GREATER",
-      "NETCOREAPP3_0_OR_GREATER",
-      "NETCOREAPP3_1_OR_GREATER"
+      "NETCOREAPP3_1"
     ],
     "languageVersion": "8.0",
     "platform": "",
@@ -36,7 +29,7 @@
           "Microsoft.AspNetCore.Identity.EntityFrameworkCore": "5.0.4",
           "Microsoft.EntityFrameworkCore.SqlServer": "5.0.4",
           "Microsoft.EntityFrameworkCore.Tools": "5.0.4",
-          "pjDataAccess": "1.0.0",
+          "pjBusiness": "1.0.0",
           "pjModels": "1.0.0",
           "Microsoft.AspNetCore.Antiforgery": "3.1.0.0",
           "Microsoft.AspNetCore.Authentication.Abstractions.Reference": "3.1.0.0",
@@ -1620,6 +1613,22 @@
           "System.Threading": "4.3.0",
           "System.Xml.ReaderWriter": "4.3.0",
           "System.Xml.XmlDocument": "4.3.0"
+        }
+      },
+      "pjBusiness/1.0.0": {
+        "dependencies": {
+          "Microsoft.AspNetCore.Authentication.JwtBearer": "3.1.13",
+          "Microsoft.AspNetCore.Identity": "2.2.0",
+          "Microsoft.AspNetCore.Identity.EntityFrameworkCore": "5.0.4",
+          "Microsoft.EntityFrameworkCore.SqlServer": "5.0.4",
+          "pjDataAccess": "1.0.0",
+          "pjModels": "1.0.0"
+        },
+        "runtime": {
+          "pjBusiness.dll": {}
+        },
+        "compile": {
+          "pjBusiness.dll": {}
         }
       },
       "pjDataAccess/1.0.0": {
@@ -4136,6 +4145,11 @@
       "sha512": "sha512-MYoTCP7EZ98RrANESW05J5ZwskKDoN0AuZ06ZflnowE50LTpbR5yRg3tHckTVm5j/m47stuGgCrCHWePyHS70Q==",
       "path": "system.xml.xmlserializer/4.3.0",
       "hashPath": "system.xml.xmlserializer.4.3.0.nupkg.sha512"
+    },
+    "pjBusiness/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
     },
     "pjDataAccess/1.0.0": {
       "type": "project",

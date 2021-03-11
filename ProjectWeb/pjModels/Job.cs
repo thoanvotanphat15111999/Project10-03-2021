@@ -14,6 +14,7 @@ namespace pjModels
         [ForeignKey("Project")]
         public int ProjectId { get; set; }
         public String JobName { get; set; }
+        public bool Status { get; set; }
         [Column(TypeName = "Date")]
         public DateTime ? JobDate { get; set; }
         public virtual  ICollection<User> User{ get; set; }
