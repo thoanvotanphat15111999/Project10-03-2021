@@ -1,20 +1,20 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { DangnhapComponent } from './dangnhap.component';
+import { ThemsuanvComponent } from './themsuanv.component';
 
-describe('DangnhapComponent', () => {
-  let component: DangnhapComponent;
-  let fixture: ComponentFixture<DangnhapComponent>;
+describe('ThemsuanvComponent', () => {
+  let component: ThemsuanvComponent;
+  let fixture: ComponentFixture<ThemsuanvComponent>;
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ DangnhapComponent ]
+      declarations: [ ThemsuanvComponent ]
     })
     .compileComponents();
   }));
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(DangnhapComponent);
+    fixture = TestBed.createComponent(ThemsuanvComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

@@ -5,6 +5,9 @@ import { CommonModule } from '@angular/common';
   declarations: [],
   imports: [
     CommonModule
+  ],
+  exports:[
+    NhanvienModule  
   ]
 })
-export class AdminRoutingModule { }
+export class NhanvienModule { }
