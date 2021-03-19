@@ -1,6 +1,12 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { RouterModule,Routes } from '@angular/router';
+import { RouterModule,Routes} from '@angular/router';
+import { DangnhapComponent } from './dangnhap/dangnhap.component';
+import { FormBuilder, FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { UserService } from './admin/shared/models/user.service';
+import { AuthGuard } from './auth/auth.guard';
+import { NotFoundComponent } from './not-found/not-found.component';
+
 
 
 const routes : Routes =[
@@ -9,26 +15,32 @@ const routes : Routes =[
       children :[
           {
             path:'',
-            redirectTo :'admin',pathMatch:'full'
+            redirectTo :'dangnhap',pathMatch:'full'
           },
           {
-            path:'admin',
-            loadChildren:'./admin/admin.module#AdminModule'
+            path:'dangnhap',
+            component:DangnhapComponent
           },
-          {
-            path:'**',
-            redirectTo:'page-not-found'
-          }
-          
+            {
+              path:'admin',
+              canActivate: [ AuthGuard ],
+              loadChildren:'./admin/admin.module#AdminModule',
+
+            }
+          ,
+          {path: '**', redirectTo: '/dangnhap'}
+
       ]
     }
 ]
 
 @NgModule({
-  declarations: [],
+  declarations: [DangnhapComponent, NotFoundComponent],
   imports: [
     CommonModule,
+    FormsModule,
     RouterModule.forChild(routes)
-  ]
+  ],
+  providers:[UserService]
 })
 export class AppsModule { }

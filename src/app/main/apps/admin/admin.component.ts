@@ -13,8 +13,4 @@ export class AdminComponent implements OnInit {
   ngOnInit() {
   }
 
-  onLogout() {
-    localStorage.removeItem('token');
-    this.router.navigate(['/dangnhap']);
-  }
 }

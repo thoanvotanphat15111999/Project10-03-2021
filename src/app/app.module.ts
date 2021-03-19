@@ -6,10 +6,8 @@ import { AppComponent } from './app.component';
 import { FormBuilder, FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { HttpClientModule, HTTP_INTERCEPTORS } from "@angular/common/http";
 import { PreloadAllModules, RouterModule, Routes } from '@angular/router';
-
 const appRoutes: Routes = [
   {
-
       path: '',
       loadChildren:'./main/apps/apps.module#AppsModule',
   }
@@ -27,9 +25,9 @@ const appRoutes: Routes = [
     RouterModule.forRoot(
       appRoutes,
       {
-        preloadingStrategy: PreloadAllModules, 
+        preloadingStrategy: PreloadAllModules,
       }),
-    
+
   ],
   providers: [
   ],

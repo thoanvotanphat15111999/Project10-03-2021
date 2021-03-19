@@ -1,6 +1,5 @@
 import { NgModule } from '@angular/core';
 import { QuanLyNhanVienComponent } from './quan-ly-nhan-vien.component';
-import { NhanvienComponent } from 'src/app/nhanvien/nhanvien.component';
 import { ChitietnhanvienComponent } from './chitietnhanvien/chitietnhanvien.component';
 import { RouterModule, Routes } from '@angular/router';
 

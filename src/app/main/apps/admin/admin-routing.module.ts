@@ -9,11 +9,11 @@ const routes: Routes = [
       children:[
         {path:'',redirectTo:'',pathMatch:'full'},
         {path:'quan-ly-nhan-vien',loadChildren:'./quan-ly-nhan-vien/quan-ly-nhan-vien.module#QuanLyNhanVienModule'},
-        // {path:'quan-ly-du-an',loadChildren:'./quan-ly-du-an.module#QuanLyDuAnModule'},
-        // {path:'quan-ly-cong-viec',loadChildren:'./quan-ly-cong-viec#QuanLyCongViecModule'}
+        {path:'quan-ly-du-an',loadChildren:'./quan-ly-du-an/quan-ly-du-an.module#QuanLyDuAnModule'},
+        {path:'quan-ly-cong-viec',loadChildren:'./quan-ly-cong-viec/quan-ly-cong-viec.module#QuanLyCongViecModule'}
       ]
     }
-] 
+]
 @NgModule({
   declarations: [],
   imports: [
