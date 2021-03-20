@@ -73,21 +73,26 @@ namespace pjDataAccess
 
         public Job update(Job Tmodel)
         {
+
             _context.Entry(Tmodel).State = Microsoft.EntityFrameworkCore.EntityState.Modified;
             _context.SaveChanges();
             return Tmodel;
         }
 
-        public void update1(Job t1, Job t2)
+        public Job update1(Job t2)
         {
             try
             {
-                t1.JobName = t2.JobName;
-                t1.ProjectId = t2.ProjectId;
-                t1.Status = t2.Status;
-                t1.UserId = t2.UserId;
+                Job Ijob = get(t2.JobId);
+                if (Ijob != null)
+                {
+                    Ijob.Status = t2.Status;
+                    _context.SaveChanges();
+                   // Job newjob = get(t2.JobId);
+                    return Ijob;
+                }
+                return null;
 
-                _context.SaveChanges();
             }
             catch (Exception e)
             {
@@ -99,7 +104,8 @@ namespace pjDataAccess
         {
             try
             {
-                List<Job> ds = _context.Jobs.Where(e=> e.UserId == id).ToList();
+               // List<Job> ds = _context.Jobs.Where(e=> e.UserId == id).ToList();
+                List<Job> ds = _context.Jobs.Where(e=> e.User.Where(x=> x.Id == id).Count()>0).ToList();
                 return ds;
             }
             catch (Exception e)

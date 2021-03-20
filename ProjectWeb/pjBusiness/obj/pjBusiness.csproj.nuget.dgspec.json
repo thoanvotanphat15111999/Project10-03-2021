@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Admin\\Desktop\\ThuMucCode\\CodeProject10_03_2021\\Project10-03-2021\\ProjectWeb\\pjBusiness\\pjBusiness.csproj": {}
+    "C:\\Users\\porta\\Desktop\\ProjectWeb1-3\\Project10-03-2021\\ProjectWeb\\pjBusiness\\pjBusiness.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Admin\\Desktop\\ThuMucCode\\CodeProject10_03_2021\\Project10-03-2021\\ProjectWeb\\pjBusiness\\pjBusiness.csproj": {
+    "C:\\Users\\porta\\Desktop\\ProjectWeb1-3\\Project10-03-2021\\ProjectWeb\\pjBusiness\\pjBusiness.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Admin\\Desktop\\ThuMucCode\\CodeProject10_03_2021\\Project10-03-2021\\ProjectWeb\\pjBusiness\\pjBusiness.csproj",
+        "projectUniqueName": "C:\\Users\\porta\\Desktop\\ProjectWeb1-3\\Project10-03-2021\\ProjectWeb\\pjBusiness\\pjBusiness.csproj",
         "projectName": "pjBusiness",
-        "projectPath": "C:\\Users\\Admin\\Desktop\\ThuMucCode\\CodeProject10_03_2021\\Project10-03-2021\\ProjectWeb\\pjBusiness\\pjBusiness.csproj",
-        "packagesPath": "C:\\Users\\Admin\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Admin\\Desktop\\ThuMucCode\\CodeProject10_03_2021\\Project10-03-2021\\ProjectWeb\\pjBusiness\\obj\\",
+        "projectPath": "C:\\Users\\porta\\Desktop\\ProjectWeb1-3\\Project10-03-2021\\ProjectWeb\\pjBusiness\\pjBusiness.csproj",
+        "packagesPath": "C:\\Users\\porta\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\porta\\Desktop\\ProjectWeb1-3\\Project10-03-2021\\ProjectWeb\\pjBusiness\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\Admin\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\porta\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -28,11 +28,11 @@
           "netcoreapp3.1": {
             "targetAlias": "netcoreapp3.1",
             "projectReferences": {
-              "C:\\Users\\Admin\\Desktop\\ThuMucCode\\CodeProject10_03_2021\\Project10-03-2021\\ProjectWeb\\pjDataAccess\\pjDataAccess.csproj": {
-                "projectPath": "C:\\Users\\Admin\\Desktop\\ThuMucCode\\CodeProject10_03_2021\\Project10-03-2021\\ProjectWeb\\pjDataAccess\\pjDataAccess.csproj"
+              "C:\\Users\\porta\\Desktop\\ProjectWeb1-3\\Project10-03-2021\\ProjectWeb\\pjDataAccess\\pjDataAccess.csproj": {
+                "projectPath": "C:\\Users\\porta\\Desktop\\ProjectWeb1-3\\Project10-03-2021\\ProjectWeb\\pjDataAccess\\pjDataAccess.csproj"
               },
-              "C:\\Users\\Admin\\Desktop\\ThuMucCode\\CodeProject10_03_2021\\Project10-03-2021\\ProjectWeb\\pjModels\\pjModels.csproj": {
-                "projectPath": "C:\\Users\\Admin\\Desktop\\ThuMucCode\\CodeProject10_03_2021\\Project10-03-2021\\ProjectWeb\\pjModels\\pjModels.csproj"
+              "C:\\Users\\porta\\Desktop\\ProjectWeb1-3\\Project10-03-2021\\ProjectWeb\\pjModels\\pjModels.csproj": {
+                "projectPath": "C:\\Users\\porta\\Desktop\\ProjectWeb1-3\\Project10-03-2021\\ProjectWeb\\pjModels\\pjModels.csproj"
               }
             }
           }
@@ -47,6 +47,10 @@
         "netcoreapp3.1": {
           "targetAlias": "netcoreapp3.1",
           "dependencies": {
+            "Microsoft.AspNet.WebApi.Cors": {
+              "target": "Package",
+              "version": "[5.2.7, )"
+            },
             "Microsoft.AspNetCore.Authentication.JwtBearer": {
               "target": "Package",
               "version": "[3.1.13, )"
@@ -92,17 +96,17 @@
         }
       }
     },
-    "C:\\Users\\Admin\\Desktop\\ThuMucCode\\CodeProject10_03_2021\\Project10-03-2021\\ProjectWeb\\pjDataAccess\\pjDataAccess.csproj": {
+    "C:\\Users\\porta\\Desktop\\ProjectWeb1-3\\Project10-03-2021\\ProjectWeb\\pjDataAccess\\pjDataAccess.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Admin\\Desktop\\ThuMucCode\\CodeProject10_03_2021\\Project10-03-2021\\ProjectWeb\\pjDataAccess\\pjDataAccess.csproj",
+        "projectUniqueName": "C:\\Users\\porta\\Desktop\\ProjectWeb1-3\\Project10-03-2021\\ProjectWeb\\pjDataAccess\\pjDataAccess.csproj",
         "projectName": "pjDataAccess",
-        "projectPath": "C:\\Users\\Admin\\Desktop\\ThuMucCode\\CodeProject10_03_2021\\Project10-03-2021\\ProjectWeb\\pjDataAccess\\pjDataAccess.csproj",
-        "packagesPath": "C:\\Users\\Admin\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Admin\\Desktop\\ThuMucCode\\CodeProject10_03_2021\\Project10-03-2021\\ProjectWeb\\pjDataAccess\\obj\\",
+        "projectPath": "C:\\Users\\porta\\Desktop\\ProjectWeb1-3\\Project10-03-2021\\ProjectWeb\\pjDataAccess\\pjDataAccess.csproj",
+        "packagesPath": "C:\\Users\\porta\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\porta\\Desktop\\ProjectWeb1-3\\Project10-03-2021\\ProjectWeb\\pjDataAccess\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\Admin\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\porta\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -116,8 +120,8 @@
           "netcoreapp3.1": {
             "targetAlias": "netcoreapp3.1",
             "projectReferences": {
-              "C:\\Users\\Admin\\Desktop\\ThuMucCode\\CodeProject10_03_2021\\Project10-03-2021\\ProjectWeb\\pjModels\\pjModels.csproj": {
-                "projectPath": "C:\\Users\\Admin\\Desktop\\ThuMucCode\\CodeProject10_03_2021\\Project10-03-2021\\ProjectWeb\\pjModels\\pjModels.csproj"
+              "C:\\Users\\porta\\Desktop\\ProjectWeb1-3\\Project10-03-2021\\ProjectWeb\\pjModels\\pjModels.csproj": {
+                "projectPath": "C:\\Users\\porta\\Desktop\\ProjectWeb1-3\\Project10-03-2021\\ProjectWeb\\pjModels\\pjModels.csproj"
               }
             }
           }
@@ -132,6 +136,10 @@
         "netcoreapp3.1": {
           "targetAlias": "netcoreapp3.1",
           "dependencies": {
+            "Microsoft.AspNet.WebApi.Cors": {
+              "target": "Package",
+              "version": "[5.2.7, )"
+            },
             "Microsoft.AspNetCore.Authentication.JwtBearer": {
               "target": "Package",
               "version": "[3.1.13, )"
@@ -177,17 +185,17 @@
         }
       }
     },
-    "C:\\Users\\Admin\\Desktop\\ThuMucCode\\CodeProject10_03_2021\\Project10-03-2021\\ProjectWeb\\pjModels\\pjModels.csproj": {
+    "C:\\Users\\porta\\Desktop\\ProjectWeb1-3\\Project10-03-2021\\ProjectWeb\\pjModels\\pjModels.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Admin\\Desktop\\ThuMucCode\\CodeProject10_03_2021\\Project10-03-2021\\ProjectWeb\\pjModels\\pjModels.csproj",
+        "projectUniqueName": "C:\\Users\\porta\\Desktop\\ProjectWeb1-3\\Project10-03-2021\\ProjectWeb\\pjModels\\pjModels.csproj",
         "projectName": "pjModels",
-        "projectPath": "C:\\Users\\Admin\\Desktop\\ThuMucCode\\CodeProject10_03_2021\\Project10-03-2021\\ProjectWeb\\pjModels\\pjModels.csproj",
-        "packagesPath": "C:\\Users\\Admin\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Admin\\Desktop\\ThuMucCode\\CodeProject10_03_2021\\Project10-03-2021\\ProjectWeb\\pjModels\\obj\\",
+        "projectPath": "C:\\Users\\porta\\Desktop\\ProjectWeb1-3\\Project10-03-2021\\ProjectWeb\\pjModels\\pjModels.csproj",
+        "packagesPath": "C:\\Users\\porta\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\porta\\Desktop\\ProjectWeb1-3\\Project10-03-2021\\ProjectWeb\\pjModels\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\Admin\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\porta\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -213,6 +221,10 @@
         "netcoreapp3.1": {
           "targetAlias": "netcoreapp3.1",
           "dependencies": {
+            "Microsoft.AspNet.WebApi.Cors": {
+              "target": "Package",
+              "version": "[5.2.7, )"
+            },
             "Microsoft.AspNetCore.Authentication.JwtBearer": {
               "target": "Package",
               "version": "[3.1.13, )"

@@ -29,7 +29,12 @@ namespace ProjectWeb.Controllers
         public IActionResult Login([FromBody] LoginModel login)
         {
             var x = services.Login(login).Result;
-            return Ok(x);
+            if (x != null)
+            {
+                return Ok(x);
+            }
+            return BadRequest()
+           ;
         }
         // [AllowAnonymous]
         [HttpPost]

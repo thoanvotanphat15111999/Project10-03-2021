@@ -79,7 +79,7 @@ namespace pjDataAccess
             return Tmodel;
         }
 
-        public void update1(Project t1, Project t2)
+        public Project update1(Project t2)
         {
             throw new NotImplementedException();
         }

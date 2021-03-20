@@ -34,6 +34,8 @@ namespace pjBusiness
             pdal = new ProjectDAL(_context);
             jdal = new JobDAL(_context);
         }
+
+        #region
         // Authenticate
         public async Task<dynamic> Login(LoginModel model)
         {
@@ -79,6 +81,8 @@ namespace pjBusiness
             return z;
         }
 
+        #endregion
+        #region
         // PROJECT Manager
         public ICollection<Project> GetallProject()
         {
@@ -154,6 +158,8 @@ namespace pjBusiness
             }
         }
 
+#endregion
+        #region
         // Job Manager
 
         public ICollection<Job> getallJob()
@@ -225,13 +231,6 @@ namespace pjBusiness
         {
             try
             {
-                //Job newjob = jdal.get(id);
-                //if (newjob != null)
-                //{
-                //    jdal.update1(newjob,job);
-                //    return job;
-                //}
-                //return null;
                 Job newjob = jdal.update(job);
                 return newjob;
             }
@@ -243,22 +242,7 @@ namespace pjBusiness
 
         }
         public Job UpdateStatusJob(Job j) {
-            return jdal.update(j);
-        }
-        public User UpdateAccount(User a)
-        {
-            User b = dal.Update(a);
-            return b;
-        }
-        public IEnumerable<User> Get() {
-            return dal.Get();
-        }
-        public User Get(string id) {
-            return dal.Get(id);
-        }
-        public User Delete(string id) {
-            return dal.Delete(id);
-        
+            return jdal.update1(j);
         }
         public List<Job> getjob(string userid)
         {
@@ -274,6 +258,26 @@ namespace pjBusiness
                 throw e;
             }
         }
+        #endregion
+        #region
+        public User UpdateAccount(User a)
+        {
+            User b = dal.Update(a);
+            return b;
+        }
+        public IEnumerable<User> Get() {
+            return dal.Get();
+        }
+        public User Get(string id) {
+            return dal.Get(id);
+        }
+        public User Delete(string id) {
+            return dal.Delete(id);
+        
+        }
+
+        #endregion
+       
     }
  
 }

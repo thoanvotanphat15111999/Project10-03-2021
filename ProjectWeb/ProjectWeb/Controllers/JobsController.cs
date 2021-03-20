@@ -12,7 +12,7 @@ using System.Threading.Tasks;
 
 namespace ProjectWeb.Controllers
 {
-    [Authorize(Roles = UserRoles.Manager)]
+    [Authorize]
     [Route("api/[controller]")]
     [ApiController]
     public class JobsController : ControllerBase
@@ -24,6 +24,7 @@ namespace ProjectWeb.Controllers
             Service = new service(_context);
         }
         // GET: api/<JobsController>
+        [Authorize(Roles = UserRoles.Manager)]
         [HttpGet]
         public IActionResult Get()
         {
@@ -40,6 +41,7 @@ namespace ProjectWeb.Controllers
         }
 
         // GET api/<JobsController>/5
+        [Authorize(Roles = UserRoles.Manager)]
         [HttpGet("{id}")]
         public IActionResult Get(int id)
         {
@@ -60,6 +62,7 @@ namespace ProjectWeb.Controllers
         }
 
         // POST api/<JobsController>
+        [Authorize(Roles = UserRoles.Manager)]
         [HttpPost]
         public IActionResult Post([FromBody] Job job)
         {
@@ -80,6 +83,7 @@ namespace ProjectWeb.Controllers
         }
 
         // PUT api/<JobsController>/5
+        [Authorize(Roles = UserRoles.Manager)]
         [HttpPut]
         public IActionResult Put([FromBody] Job job)
         {
@@ -100,6 +104,7 @@ namespace ProjectWeb.Controllers
         }
 
         // DELETE api/<JobsController>/5
+        [Authorize(Roles = UserRoles.Manager)]
         [HttpDelete("{id}")]
         public IActionResult Delete(int id)
         {

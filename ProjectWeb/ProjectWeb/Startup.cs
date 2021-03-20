@@ -39,6 +39,7 @@ namespace ProjectWeb
                 .AddEntityFrameworkStores<DataContext>()
                 .AddDefaultTokenProviders();
 
+            services.AddCors();
             // Adding Authentication  
             services.AddAuthentication(options =>
             {
@@ -46,7 +47,7 @@ namespace ProjectWeb
                 options.DefaultChallengeScheme = JwtBearerDefaults.AuthenticationScheme;
                 options.DefaultScheme = JwtBearerDefaults.AuthenticationScheme;
             })
-
+           
             // Adding Jwt Bearer  
             .AddJwtBearer(options =>
             {
@@ -77,6 +78,12 @@ namespace ProjectWeb
             app.UseHttpsRedirection();
 
             app.UseRouting();
+            app.UseCors(builder =>
+            builder.WithOrigins(Configuration["JWT:ValidAudience"].ToString())
+            .AllowAnyHeader()
+            .AllowAnyMethod()
+
+            );
             app.UseAuthentication();
             app.UseAuthorization();
 

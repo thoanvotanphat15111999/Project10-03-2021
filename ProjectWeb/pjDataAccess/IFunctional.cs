@@ -12,7 +12,7 @@ namespace pjDataAccess
         public T update(T Tmodel);
         public T get(int id);
 
-        public void update1(T t1, T t2);
+        public T update1(T t2);
 
     }
 }
